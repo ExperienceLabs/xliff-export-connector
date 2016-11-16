@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <general
+            jcr:primaryType="nt:unstructured"
+            title="Gcell Export XLIFF Connector Translator Settings"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+            <headerlabel
+                        jcr:primaryType="cq:Widget"
+                        text="Adobe Experience Manager Local Directory Paths To XML Files..."
+						style="font-size:12px"
+                        xtype="label">
+            </headerlabel>
+			<horispace1
+                        jcr:primaryType="cq:Widget"
+                        height="25"
+                        xtype="spacer"></horispace1>
+                <servicelabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Source Export XML Filepath:"
+                        name="./xmlstorepath"
+                        xtype="textfield">
+                </servicelabel>
+				<horispace2
+                        jcr:primaryType="cq:Widget"
+                        height="20"
+                        xtype="spacer"></horispace2>
+                <serviceattribution
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Target Import XML Filepath:"
+                        name="./xmlloadpath"
+                        xtype="textfield">
+                        <listeners
+                            jcr:primaryType="nt:unstructured"
+                            change="function(comp) {CQ.cloudservices.getEditOk().enable();}"/>
+                </serviceattribution>
+				<horispace3
+                        jcr:primaryType="cq:Widget"
+                        height="20"
+                        xtype="spacer"></horispace3>
+                <selectList
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="2.0"
+                        fieldLabel="XLIFF version:"
+                        name="./xliffdocumentversion"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                        <one
+                            jcr:primaryType="nt:unstructured"
+                            text="Xliff 1.2"
+                            value="1.2"/>
+                        <two
+                            jcr:primaryType="nt:unstructured"
+                            text="Xliff 2.0"
+                            value="2.0"/>
+                         </options>
+                    </selectList>
+            </items>
+        </general>
+    </items>
+</jcr:root>

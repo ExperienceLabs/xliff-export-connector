@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2015-06-30T16:53:07.216+01:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/cq/cloudserviceconfigs/templates/servicepage"
+        jcr:description="Gcell XLIFF Export Connector"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="GCELL XLIFF EXPORT CONNECTOR"
+        sling:resourceType="cq/cloudserviceconfigs/components/servicepage"
+        connectedWhen="clientid"
+        descriptionExtended="Taking a step further in the world of multilingual content, Gcell XLIFF Export connector facilitates human translations of your web content. It offers the contextual accuracy of human translation and eliminates any variations by standardizing the format of translated content."
+        description="Taking a step further in the world of multilingual content, Gcell XLIFF Export connector facilitates human translations of your web content. It offers the contextual accuracy of human translation and eliminates any variations by standardizing the format of translated content."
+        inclusionRank="{Long}202"
+        ranking="10"
+        allowMultiple="{Boolean}true"
+        serviceAdminUrl="http://www.adobe.com"
+        serviceUrl="http://adobe.ly/1KxHea6"
+        serviceUrlLabel="Gcell"
+        thumbnailPath="/apps/cq/translation/templates/generic-xliff/xliff-servicepage/thumbnail.png"/>
+</jcr:root>

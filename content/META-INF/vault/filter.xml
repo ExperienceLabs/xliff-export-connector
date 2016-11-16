@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/cq/translation/components/generic-xliff"/>
+    <filter root="/apps/cq/translation/templates/generic-xliff"/>
+    <filter root="/etc/cloudservices/generic-xliff-translation"/>
+	<filter root="/apps/granite/translation/install" mode="update"/>
+</workspaceFilter>

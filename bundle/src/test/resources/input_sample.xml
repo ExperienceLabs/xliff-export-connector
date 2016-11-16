@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><translationObjectFile fileType="PAGE" sourcePath="/content/geometrixx-outdoors/en/community_1">
+  <translationObjectProperties>
+    <property isMultiValue="false" nodePath="/content/geometrixx-outdoors/en/community_1/jcr:content" propertyName="jcr:title">Communities</property>
+    <property isMultiValue="false" nodePath="/content/geometrixx-outdoors/en/community_1/jcr:content" propertyName="pageTitle">Communities</property>
+    <property isMultiValue="false" nodePath="/content/geometrixx-outdoors/en/community_1/jcr:content/par/text_ce9f" propertyName="text">&lt;p&gt;Thanks for stopping by the outdoor communities, hosted by Geometrixx. Not only do we appreciate your passion for adventure, we also want to hear all about it. Our communities bring people together - everyone from avid enthusiasts to die-hards - to discuss all the popular outdoor sports you love to participate in, the gear it takes to make it happen, and the best places on the planet to get it done. In addition to creating your own profile and checking out all the existing communities, please feel free to create your own community, set up a calendar, and hopefully make some new friends. &lt;/p&gt;
+&lt;p&gt;We look forward to hearing from you!&amp;nbsp;&lt;br&gt;
+&lt;/p&gt;
+</property>
+    <property isMultiValue="false" nodePath="/content/geometrixx-outdoors/en/community_1/jcr:content/par/textimage_3216" propertyName="text">&lt;h3&gt;Sean Smith&lt;/h3&gt;
+&lt;p&gt;&lt;b&gt;Community Manager&lt;/b&gt;&lt;br&gt;
+Geometrixx Outdoors&lt;/p&gt;
+</property>
+  </translationObjectProperties>
+</translationObjectFile>

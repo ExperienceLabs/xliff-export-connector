@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="Account settings for Generic XLIFF Connector Translation access"
+    jcr:primaryType="cq:Template"
+    jcr:title="Gcell Export XLIFF Connector Translation Configuration"
+    sling:resourceSuperType="cq/cloudserviceconfigs/templates/configpage"
+    allowedChildren="[/libs/cq/translation/templates/generic-xliff/xliff-servicepage]"
+    allowedPaths="[/etc/cloudservices/generic-xliff-translation(/.*)?]"
+    ranking="{Long}90">
+    <jcr:content
+        cq:cloudservicename="generic-xliff-translation"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="cq/translation/components/generic-xliff/xliff-cloudconfig"/>
+</jcr:root>

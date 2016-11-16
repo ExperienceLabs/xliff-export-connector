@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.adobe.granite</groupId>
+        <artifactId>parent</artifactId>
+        <version>52</version>
+        <relativePath />
+    </parent>
+
+    <artifactId>com.adobe.granite.translation.generic.xliff.connector.core.pkg</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>content-package</packaging>
+    <name>Generic XLIFF Connector implementation of the Granite Translation API - Package</name>
+
+    <properties>
+        <install.target>/apps/granite/translation/install</install.target>
+        <vault.package.version>${project.version}</vault.package.version>
+        <vault.package.group>com.gcell.aem.translation</vault.package.group>
+        <vault.package.company>Adobe Systems</vault.package.company>
+    </properties>
+
+     <build>
+        <resources>
+            <!-- define the resources that will go into the package -->
+            <resource>
+                <directory>${basedir}/jcr_root</directory>
+                <excludes>
+                    <!-- exclude .vlt control files in the package -->
+                    <exclude>**/.vlt</exclude>
+                    <exclude>**/.vltignore</exclude>
+                </excludes>
+            </resource>
+        </resources>
+
+        <plugins>
+            <plugin>
+                <groupId>com.day.jcr.vault</groupId>
+                <artifactId>content-package-maven-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                    <group>${vault.package.group}</group>
+                    <requiresRoot>true</requiresRoot>
+                    <properties>
+                        <acHandling>overwrite</acHandling>
+                        <createdBy>Adobe</createdBy>
+                    </properties>
+                    <filterSource>${basedir}/META-INF/vault/filter.xml</filterSource>
+                    <!-- ignore signature checking -->
+                    <ignores>
+                        <ignore>*</ignore>
+                    </ignores>
+                    <embeddeds>
+                        <embedded>
+                            <groupId>com.adobe.granite</groupId>
+                            <artifactId>com.adobe.granite.translation.generic.xliff.connector.core</artifactId>
+                            <target>${install.target}</target>
+                        </embedded>
+                    </embeddeds>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <!-- ensure that the empty directories are copied -->
+                <configuration>
+                    <includeEmptyDirs>true</includeEmptyDirs>
+                </configuration>
+
+                <executions>
+                    <execution>
+                        <id>copy-jsps</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${basedir}/target/${jsp.tmp.dir}</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>${basedir}/jcr_root</directory>
+                                    <includes>
+                                        <include>**/*.jsp</include>
+                                    </includes>
+                                </resource>
+                                <resource>
+                                    <directory>${basedir}/../../foundation/content/jcr_root</directory>
+                                    <includes>
+                                        <include>libs/foundation/global.jsp</include>
+                                    </includes>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+    </build>
+
+    <profiles>
+
+        <profile>
+            <id>jspc</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.mortbay.jetty</groupId>
+                        <artifactId>jetty-jspc-maven-plugin</artifactId>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.adobe.granite</groupId>
+            <artifactId>com.adobe.granite.translation.generic.xliff.connector.core</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+</project>
+
+
+

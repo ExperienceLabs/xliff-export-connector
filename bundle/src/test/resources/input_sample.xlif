@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="fr">
+<file id="193078517002444699495823491690482376266004989030200051436551890747248761333858736039014">
+<unit id="178842112901108224844605398274571706639084975582934193678067428781779776520928570134551444348888235540478324654444295074566219645931178515543217181511459845224355125293925">
+<segment>
+<source>Communities</source>
+<target>fr_Communities_fr</target>
+</segment>
+</unit>
+<unit id="178842112901108224844605398274571706639084975582934193678067428781779776520928570134551444348888235540478324654444295074566219645931178546655575272895261458015731189576549">
+<segment>
+<source>Communities</source>
+<target>fr_Communities_fr</target>
+</segment>
+</unit>
+<unit id="844557999689782449152412612038308138313236861345659322973725673246867310279111785823346020688891831774370355772281626098419480691644556971485168874788984252365921165634760936534307232847524709">
+<originalData>
+<data id="d1">&lt;p></data>
+<data id="d2">&lt;/p></data>
+<data id="d3">&lt;br clear="none" /></data>
+</originalData>
+<segment>
+<source><sc id="1" canOverlap="no" isolated="yes" dataRef="d1"/>Thanks for stopping by the outdoor communities, hosted by Geometrixx. Not only do we appreciate your passion for adventure, we also want to hear all about it. Our communities bring people together - everyone from avid enthusiasts to die-hards - to discuss all the popular outdoor sports you love to participate in, the gear it takes to make it happen, and the best places on the planet to get it done. In addition to creating your own profile and checking out all the existing communities, please feel free to create your own community, set up a calendar, and hopefully make some new friends. <ec id="2" isolated="yes" canOverlap="no" dataRef="d2"/>
+</source>
+<target><sc id="1" canOverlap="no" isolated="yes" dataRef="d1"/>fr_Thanks for stopping by the outdoor communities, hosted by Geometrixx. Not only do we appreciate your passion for adventure, we also want to hear all about it. Our communities bring people together - everyone from avid enthusiasts to die-hards - to discuss all the popular outdoor sports you love to participate in, the gear it takes to make it happen, and the best places on the planet to get it done. In addition to creating your own profile and checking out all the existing communities, please feel free to create your own community, set up a calendar, and hopefully make some new friends._fr <ec id="2" isolated="yes" canOverlap="no" dataRef="d2"/>
+</target>
+</segment>
+<segment>
+<source><sc id="3" canOverlap="no" isolated="yes" dataRef="d1"/>We look forward to hearing from you! We look forward to hearing from you! <ph id="4" dataRef="d3"/>
+<ec id="5" isolated="yes" canOverlap="no" dataRef="d2"/>
+</source>
+<target><sc id="3" canOverlap="no" isolated="yes" dataRef="d1"/>fr_We look forward to hearing from you! We look forward to hearing from you!_fr <ph id="4" dataRef="d3"/>
+<ec id="5" isolated="yes" canOverlap="no" dataRef="d2"/>
+</target>
+</segment>
+</unit>
+<unit id="928601340990155203702885142579832154425855212385611095994791227870944571417669056522093463590535630835828308232661608292969407196138709158128026845761486418504505444948221802887993726259341017907196621669">
+<originalData>
+<data id="d1">&lt;h3></data>
+<data id="d2">&lt;/h3></data>
+<data id="d3">&lt;p></data>
+<data id="d4">&lt;b></data>
+<data id="d5">&lt;/b></data>
+<data id="d6">&lt;br clear="none" /></data>
+<data id="d7">&lt;/p></data>
+</originalData>
+<segment>
+<source><sc id="1" canOverlap="no" isolated="yes" dataRef="d1"/>Sean Smith<ec id="2" isolated="yes" canOverlap="no" dataRef="d2"/>
+<sc id="3" canOverlap="no" isolated="yes" dataRef="d3"/><sc id="4" canOverlap="no" isolated="yes" dataRef="d4"/>Community Manager<ec id="5" isolated="yes" canOverlap="no" dataRef="d5"/><ph id="6" dataRef="d6"/>
+Geometrixx Outdoors<ec id="7" isolated="yes" canOverlap="no" dataRef="d7"/>
+</source>
+<target><sc id="1" canOverlap="no" isolated="yes" dataRef="d1"/>fr_Sean Smith_fr<ec id="2" isolated="yes" canOverlap="no" dataRef="d2"/>
+<sc id="3" canOverlap="no" isolated="yes" dataRef="d3"/><sc id="4" canOverlap="no" isolated="yes" dataRef="d4"/>fr_Community Manager_fr<ec id="5" isolated="yes" canOverlap="no" dataRef="d5"/><ph id="6" dataRef="d6"/>
+fr_Geometrixx Outdoors_fr<ec id="7" isolated="yes" canOverlap="no" dataRef="d7"/>
+</target>
+</segment>
+</unit>
+</file>
+</xliff>
